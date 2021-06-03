@@ -32,7 +32,7 @@ Table of Contents:
 | Collector.ipynb | https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/collector.ipynb |
 | DataFrame_Femenism.ipynb |https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/DataFrame_Femenism.ipynb  |
 | DataFrame_Mensrights.ipynb | https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/DataFrame_Mensrights.ipynb |
-| logreg demo.ipynb |  |
+| logreg demo.ipynb | https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/logreg%20demo.ipynb |
 | SVM demo.ipynb |https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/SVM%20demo.ipynb  |
 
 
