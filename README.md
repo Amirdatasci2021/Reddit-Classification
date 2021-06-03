@@ -27,11 +27,14 @@ To validate that ideology can be infered without context using different models 
 ## Executive Summary:
 
 Table of Contents:
-Collector.pynb..............The method used to make the api calls and collect data
-DataFrame_Femenism.ipynb....The file where r/Feminism/ is cleaned, processed
-DataFrame_Mensrights.ipynb..The file where r/MensRights 
-logreg demo.ipynb...........Logistic Regression
-SVM demo.ipynb..............SVM Regression Model
+|File name  | Link  |
+|--|--|
+| Collector.ipynb | https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/collector.ipynb |
+| DataFrame_Femenism.ipynb |https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/DataFrame_Femenism.ipynb  |
+| DataFrame_Mensrights.ipynb | https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/DataFrame_Mensrights.ipynb |
+| logreg demo.ipynb |  |
+| SVM demo.ipynb |https://github.com/Amirdatasci2021/Reddit-Classification/blob/master/SVM%20demo.ipynb  |
+
 
 Data contains 3 folders:
 fem(data collected r/Feminism) 
@@ -51,7 +54,13 @@ The following were removed from the submission/comments: markup hyperlinks, punc
 ### Preprocess and Modeling 
 CountVectorizer and TfidfVectorizer from scikit-learn were used to convert the text data to numeric features. TfidfVectorizer achieved a better accuracy score with logistic regression model.
 
-+----------------+-------------+----------+------------+-------------+\n|                |   precision |   recall |   f1-score |     support |\n+================+=============+==========+============+=============+\n| Not Mensrights |    0.940278 | 0.975018 |   0.957333 | 2842        |\n+----------------+-------------+----------+------------+-------------+\n| Mensrights     |    0.945677 | 0.875354 |   0.909158 | 1412        |\n+----------------+-------------+----------+------------+-------------+\n| accuracy       |    0.941937 | 0.941937 |   0.941937 |    0.941937 |\n+----------------+-------------+----------+------------+-------------+\n| macro avg      |    0.942978 | 0.925186 |   0.933245 | 4254        |\n+----------------+-------------+----------+------------+-------------+\n| weighted avg   |    0.94207  | 0.941937 |   0.941342 | 4254        |\n+----------------+-------------+----------+------------+-------------+
+|   | precision  | recall   | f1-score  | support |
+|---|---|---|---|---|
+| Mensrights   |  0.940278  |0.975018   |0.957333   |  2842 |
+| Not Mensrights  | 0.945677  | 0.875354  |  0.909158  |  1412  |
+| accuracy | 0.941937  | 0.941937  |  0.941937 |  0.941937   |
+ macro avg      |    0.942978 | 0.925186 |   0.933245 | 4254     |
+weighted avg   |    0.94207  | 0.941937 |   0.941342 | 4254  |
 
 Support Vector Machine models were tested with Gridsearch and the time constraints made it impossible to really use it so we used a depricated bestparams with the SVM model. Logistic regression performed the best but both worked very well. The essential problem was the insanely long time that SVM took with running. In an attempt to improve results with SVM I did cut the smaple sizes down but it was still taking too long. 
 
@@ -67,20 +76,3 @@ Can Natural Language Processing with help of SKLearn distinguish between two ide
 This means that there is to a lesser or greater degree ideology embedded in language.
 
 Potential improvements for future: would be to collect more training data from more simalar sources that are ideologically similar, do more data cleaning to expunge filler words and expirement with Vader and Nltk, and to use intensive gridsearching to optimize for other models such as L1 and L2 Logistic regressions, Random forest, and Multinomial naive Bayes and explore boosting.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
